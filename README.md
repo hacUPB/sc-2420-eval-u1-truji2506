@@ -4,7 +4,8 @@
 ### Estudiante:  Jose Ignacio Trujillo Cano
 ### ID:  000335384
 
-1. Realiza un listado de todos los componentes de hardware y software.
+1. ###  Realiza un listado de todos los componentes de hardware y software.
+
 R//
 
 Hardware
@@ -33,7 +34,7 @@ Software
 -Software de juegos
 -Utilidades del sistema
 
-2.Redacta una definición de la arquitectura de una computadora con tus propias palabras. Enumera las diferentes variantes de arquitecturas que existen.
+2. ### Redacta una definición de la arquitectura de una computadora con tus propias palabras. Enumera las diferentes variantes de arquitecturas que existen.
 
 R//
 La arquitectura de una computadora es la forma en que se organizan y conectan sus componentes internos para que pueda funcionar y realizar tareas.
