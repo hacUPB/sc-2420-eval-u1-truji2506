@@ -7,32 +7,31 @@
 1. ###  Realiza un listado de todos los componentes de hardware y software.
 
 R//
-
 Hardware
--Unidad central de procesamiento (CPU)
--Placa Base
--Memoria RAM
--Memoria ROM
--Memoria caché
--Unidades de almacenamiento
--Fuente de alimentación
--Disco Duro
--Tarjeta de video (GBU)
--Caja o gabinete
--Tarjeta de sonido 
--Ventiladores y disipadores de calor
--Periféricos
+-   Unidad central de procesamiento (CPU)
+-   Placa Base
+-   Memoria RAM
+-   Memoria ROM
+-   Memoria caché
+-   Unidades de almacenamiento
+-   Fuente de alimentación
+-   Disco Duro
+-   Tarjeta de video (GBU)
+-   Caja o gabinete
+-   Tarjeta de sonido 
+-   Ventiladores y disipadores de calor
+-   Periféricos
 
 Software
--Navegador web
--Suite de productividad
--Software de gráficos y edición de fotos
--Reproductores multimedia
--Programas de mensajería
--Software de seguridad
--Software de edición de video
--Software de juegos
--Utilidades del sistema
+-   Navegador web
+-   Suite de productividad
+-   Software de gráficos y edición de fotos
+-   Reproductores multimedia
+-   Programas de mensajería
+-   Software de seguridad
+-   Software de edición de video
+-   Software de juegos
+-   Utilidades del sistema
 
 2. ### Redacta una definición de la arquitectura de una computadora con tus propias palabras. Enumera las diferentes variantes de arquitecturas que existen.
 
