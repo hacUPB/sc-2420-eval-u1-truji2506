@@ -50,4 +50,4 @@ Tipos de arquitecturas de computadoras:
 -   Multiprocesador: Usa varios procesadores para realizar tareas simultáneamente.
 -   Sistemas embebidos: Diseñada para dispositivos específicos como electrodomésticos y autos, enfocada en ser eficiente y cumplir funciones concretas.
 
-![Mapa Conceptual]()
+![Mapa Conceptual](Mapaconceptual.png)
