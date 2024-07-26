@@ -37,15 +37,17 @@ Software
 
 R//
 La arquitectura de una computadora es la forma en que se organizan y conectan sus componentes internos para que pueda funcionar y realizar tareas.
+
 Tipos de arquitecturas de computadoras:
-Von Neumann: Usa una sola memoria para datos e instrucciones, lo que puede causar lentitud.
-Harvard: Tiene memorias separadas para datos e instrucciones, lo que permite que sean más rápidas.
-CISC (Complex Instruction Set Computer): Usa muchas instrucciones complejas para realizar tareas con menos pasos.
-RISC (Reduced Instruction Set Computer): Usa instrucciones simples y rápidas para ser más eficiente.
-MISC (Minimal Instruction Set Computer): Usa un número muy reducido de instrucciones para simplificar el hardware.
-EPIC (Explicitly Parallel Instruction Computing): Permite ejecutar muchas instrucciones al mismo tiempo.
-Arquitectura de red: Conecta varias computadoras para que trabajen juntas en una tarea.
-Multiprocesador: Usa varios procesadores para realizar tareas simultáneamente.
-Sistemas embebidos: Diseñada para dispositivos específicos como electrodomésticos y autos, enfocada en ser eficiente y cumplir funciones concretas.
+
+-   Von Neumann: Usa una sola memoria para datos e instrucciones, lo que puede causar lentitud.
+-   Harvard: Tiene memorias separadas para datos e instrucciones, lo que permite que sean más rápidas.
+-   CISC (Complex Instruction Set Computer): Usa muchas instrucciones complejas para realizar tareas con menos pasos.
+-   RISC (Reduced Instruction Set Computer): Usa instrucciones simples y rápidas para ser más eficiente.
+-   MISC (Minimal Instruction Set Computer): Usa un número muy reducido de instrucciones para simplificar el hardware.
+-   EPIC (Explicitly Parallel Instruction Computing): Permite ejecutar muchas instrucciones al mismo tiempo.
+-   Arquitectura de red: Conecta varias computadoras para que trabajen juntas en una tarea.
+-   Multiprocesador: Usa varios procesadores para realizar tareas simultáneamente.
+-   Sistemas embebidos: Diseñada para dispositivos específicos como electrodomésticos y autos, enfocada en ser eficiente y cumplir funciones concretas.
 
 ![Mapa Conceptual]()
