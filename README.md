@@ -47,8 +47,9 @@ Tipos de arquitecturas de computadoras:
 5.   MISC (Minimal Instruction Set Computer): Usa un número muy reducido de instrucciones para simplificar el hardware.
 6.   EPIC (Explicitly Parallel Instruction Computing): Permite ejecutar muchas instrucciones al mismo tiempo.
 
-3. Organiza los resultados de la búsqueda en un mapa conceptual.
 
-4. Profundiza en la CPU de la computadora. Investiga y agrega al mapa los componentes internos de la CPU.
+ Organiza los resultados de la búsqueda en un mapa conceptual.
+
+ Profundiza en la CPU de la computadora. Investiga y agrega al mapa los componentes internos de la CPU.
 
 ![Mapa Conceptual](Mapaconceptual2.png)
