@@ -61,51 +61,88 @@ Tipos de arquitecturas de computadoras:
 
 ### EJERCICIO 1 
 
--   // Suma de dos números
--   @num1       // Cargar la dirección de num1
--   D=M         // D = M[num1] (cargar valor de num1 en D)
--   @num2       // Cargar la dirección de num2
--   D=D+M       // D = D + M[num2] (sumar num1 y num2)
--   @result     // Cargar la dirección de result
--   M=D         // M[result] = D (almacenar el resultado)
--   (END)       // Fin del programa
+### Suma de los primeros N números naturales:
+Escribe un programa que calcule la suma de los primeros N números naturales. El valor de N estará almacenado en RAM[0].
+
+Se realizo pruebas en el visual estudio usando C# en el cual no tuve ningun inconveniente al momento de correr el ejercico de la suma de los primeros N numeros naturales
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingrese el valor de N: ");
+        int N = int.Parse(Console.ReadLine());
+        int suma = 0;
+        for (int i = 1; i <= N; i++)
+        {
+            suma += i;
+        }
+        Console.WriteLine($"La suma de los primeros {N} números naturales es: {suma}");
+    }
+}
+
+Teniendo encuenta lo anterior se realizaron varias pruebas y el codigo en Nand2tetris me funciona pero no es el adecuado para el ejercicio, tuve problemas con darle terminación al ejericio 
+
+-   @0
+-   D=M
+-   @sum
+-   M=0
+-   @i
+-   @0
+-   D=M
+-   @i
+-   D=D-M
 -   @END
--   0;JMP       // Bucle infinito para detener el programa
+-   @i
+-   D=M
+-   @sum
+-   M=D+M
+-   @i
+-   M=M+1
+-   (loop)
+-   @loop  
+-   (END)
+-   @sum
+-   D=M
+-   @5
+-   M=D
+-   0;JMP
+
+Dejo el ejercicio por terminar.
+
 
 ### EJERCICIO 2
 
--   @num1
--   D=M         // D = M[num1]
--   @num2
--   D=D-M       // D = num1 - num2
--   @GREATER
--   D;JGT       // Si D > 0, salta a MAYORQUE
--   @LESS
--   D;JLT       // Si D < 0, salta a MENORQUE
--   @EQUAL
--   0;JMP       // Si D == 0, salta a IGUAL
+### Suma de los números pares hasta N:
+Escribe un programa que calcule la suma de todos los números pares desde 0 hasta N (inclusive). El valor de N se encuentra en RAM[0] y la suma resultante debe almacenarse en RAM[1].
 
--   (MAYORQUE)
--   @result
--   M=1         // num1 > num2
--   @END
--   0;JMP
+@0
+D=M      
+@2
+M=D      
+M=0           
+(LOOP)
+@3
+D=M       
+@2
+D=D-M     
+D;JGT     
+@3
+D=M             
+@2
+M=D+1   
+@4
+D=M       
+@2 
+@LOOP
+0;JMP   
+(END)
+@END
+0;JMP     
 
--   (MENORQUE)
--   @result
--   M=-1        // num1 < num2
--   @END
--   0;JMP
-
--   (IGUAL)
--   @result
--   M=0         // num1 == num2
--   @END
--   0;JMP
-
--   (END)
--   @END
--   0;JMP
+Error al momento de cargar invalid ASM value: M+D line 18 
+Se corrigio este error en la linea 18 y 26
+Se trato de modificar la linea 15 para que sean sumados los valores y no deja correr el ejercicio ya que tienen un error 
 
 ### EJERCICIO 3
 
@@ -129,21 +166,21 @@ Tipos de arquitecturas de computadoras:
 -   // Comenzamos el bucle de multiplicación
 -   (LOOP)
 -   @R1
--   D=M           // D = R1 (segundo número)
+-   D=M           
 -   @END
--   D;JEQ         // Si R1 es 0, terminamos el bucle
+-   D;JEQ         
 
 -   @R0
--   D=M           // D = R0 (primer número)
+-   D=M          
 -   @2
--   M=M+D         // M[2] += D (acumulador += primer número)
+-   M=M+D         
 
 -   @R1
--   MD=M-1        // R1 -= 1
+-   MD=M-1        
 -   @LOOP
--   0;JMP         // Repetir el bucle
+-   0;JMP        
 
 -   (END)
 -   @END
--   0;JMP         // Loop infinito para detener el programa
+-   0;JMP        
 
