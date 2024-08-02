@@ -82,7 +82,7 @@ class Program
 }
 
 Teniendo encuenta lo anterior se realizaron varias pruebas y el codigo en Nand2tetris me funciona pero no es el adecuado para el ejercicio, tuve problemas con darle terminación al ejericio 
-
+```asm
 -   @0
 -   D=M
 -   @sum
@@ -107,7 +107,7 @@ Teniendo encuenta lo anterior se realizaron varias pruebas y el codigo en Nand2t
 -   @5
 -   M=D
 -   0;JMP
-
+``` 
 Dejo el ejercicio por terminar.
 
 
@@ -115,7 +115,7 @@ Dejo el ejercicio por terminar.
 
 ### Suma de los números pares hasta N:
 Escribe un programa que calcule la suma de todos los números pares desde 0 hasta N (inclusive). El valor de N se encuentra en RAM[0] y la suma resultante debe almacenarse en RAM[1].
-
+```asm
 @0
 D=M      
 @2
@@ -139,48 +139,41 @@ D=M
 (END)
 @END
 0;JMP     
-
+```
 Error al momento de cargar invalid ASM value: M+D line 18 
 Se corrigio este error en la linea 18 y 26
 Se trato de modificar la linea 15 para que sean sumados los valores y no deja correr el ejercicio ya que tienen un error 
 
 ### EJERCICIO 3
+Multiplicación
 
--   // Multiplicación de los valores en la posición 0 y 1, resultado en la posición 2
+```asm
 -   @0
--   D=M           // D = M[0]
+-   D=M         
 -   @R0
--   M=D           // Guardamos M[0] en R0 (temporal)
-
+-   M=D          
 -   @1
--   D=M           // D = M[1]
+-   D=M      
 -   @R1
--   M=D           // Guardamos M[1] en R1 (temporal)
-
--   // Inicializamos el acumulador y el contador
+-   M=D         
 -   @2
--   M=0           // M[2] = 0 (resultado)
+-   M=0          
 -   @R2
--   M=0           // R2 = 0 (contador)
-
--   // Comenzamos el bucle de multiplicación
+-   M=0         
 -   (LOOP)
 -   @R1
 -   D=M           
 -   @END
 -   D;JEQ         
-
 -   @R0
 -   D=M          
 -   @2
 -   M=M+D         
-
 -   @R1
 -   MD=M-1        
 -   @LOOP
 -   0;JMP        
-
 -   (END)
 -   @END
 -   0;JMP        
-
+```
