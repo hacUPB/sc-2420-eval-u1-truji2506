@@ -65,7 +65,7 @@ Tipos de arquitecturas de computadoras:
 Escribe un programa que calcule la suma de los primeros N números naturales. El valor de N estará almacenado en RAM[0].
 
 Se realizo pruebas en el visual estudio usando C# en el cual no tuve ningun inconveniente al momento de correr el ejercico de la suma de los primeros N numeros naturales
-
+```asm
 class Program
 {
     static void Main()
@@ -80,7 +80,7 @@ class Program
         Console.WriteLine($"La suma de los primeros {N} números naturales es: {suma}");
     }
 }
-
+```
 Teniendo encuenta lo anterior se realizaron varias pruebas y el codigo en Nand2tetris me funciona pero no es el adecuado para el ejercicio, tuve problemas con darle terminación al ejericio 
 ```asm
 -   @0
