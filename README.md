@@ -61,89 +61,89 @@ Tipos de arquitecturas de computadoras:
 
 ### EJERCICIO 1 
 
-// Suma de dos números
-@num1       // Cargar la dirección de num1
-D=M         // D = M[num1] (cargar valor de num1 en D)
-@num2       // Cargar la dirección de num2
-D=D+M       // D = D + M[num2] (sumar num1 y num2)
-@result     // Cargar la dirección de result
-M=D         // M[result] = D (almacenar el resultado)
-(END)       // Fin del programa
-@END
-0;JMP       // Bucle infinito para detener el programa
+-   // Suma de dos números
+-   @num1       // Cargar la dirección de num1
+-   D=M         // D = M[num1] (cargar valor de num1 en D)
+-   @num2       // Cargar la dirección de num2
+-   D=D+M       // D = D + M[num2] (sumar num1 y num2)
+-   @result     // Cargar la dirección de result
+-   M=D         // M[result] = D (almacenar el resultado)
+-   (END)       // Fin del programa
+-   @END
+-   0;JMP       // Bucle infinito para detener el programa
 
 ### EJERCICIO 2
 
-@num1
-D=M         // D = M[num1]
-@num2
-D=D-M       // D = num1 - num2
-@GREATER
-D;JGT       // Si D > 0, salta a MAYORQUE
-@LESS
-D;JLT       // Si D < 0, salta a MENORQUE
-@EQUAL
-0;JMP       // Si D == 0, salta a IGUAL
+-   @num1
+-   D=M         // D = M[num1]
+-   @num2
+-   D=D-M       // D = num1 - num2
+-   @GREATER
+-   D;JGT       // Si D > 0, salta a MAYORQUE
+-   @LESS
+-   D;JLT       // Si D < 0, salta a MENORQUE
+-   @EQUAL
+-   0;JMP       // Si D == 0, salta a IGUAL
 
-(MAYORQUE)
-@result
-M=1         // num1 > num2
-@END
-0;JMP
+-   (MAYORQUE)
+-   @result
+-   M=1         // num1 > num2
+-   @END
+-   0;JMP
 
-(MENORQUE)
-@result
-M=-1        // num1 < num2
-@END
-0;JMP
+-   (MENORQUE)
+-   @result
+-   M=-1        // num1 < num2
+-   @END
+-   0;JMP
 
-(IGUAL)
-@result
-M=0         // num1 == num2
-@END
-0;JMP
+-   (IGUAL)
+-   @result
+-   M=0         // num1 == num2
+-   @END
+-   0;JMP
 
-(END)
-@END
-0;JMP
+-   (END)
+-   @END
+-   0;JMP
 
 ### EJERCICIO 3
 
-// Multiplicación de los valores en la posición 0 y 1, resultado en la posición 2
-@0
-D=M           // D = M[0]
-@R0
-M=D           // Guardamos M[0] en R0 (temporal)
+-   // Multiplicación de los valores en la posición 0 y 1, resultado en la posición 2
+-   @0
+-   D=M           // D = M[0]
+-   @R0
+-   M=D           // Guardamos M[0] en R0 (temporal)
 
-@1
-D=M           // D = M[1]
-@R1
-M=D           // Guardamos M[1] en R1 (temporal)
+-   @1
+-   D=M           // D = M[1]
+-   @R1
+-   M=D           // Guardamos M[1] en R1 (temporal)
 
-// Inicializamos el acumulador y el contador
-@2
-M=0           // M[2] = 0 (resultado)
-@R2
-M=0           // R2 = 0 (contador)
+-   // Inicializamos el acumulador y el contador
+-   @2
+-   M=0           // M[2] = 0 (resultado)
+-   @R2
+-   M=0           // R2 = 0 (contador)
 
-// Comenzamos el bucle de multiplicación
-(LOOP)
-@R1
-D=M           // D = R1 (segundo número)
-@END
-D;JEQ         // Si R1 es 0, terminamos el bucle
+-   // Comenzamos el bucle de multiplicación
+-   (LOOP)
+-   @R1
+-   D=M           // D = R1 (segundo número)
+-   @END
+-   D;JEQ         // Si R1 es 0, terminamos el bucle
 
-@R0
-D=M           // D = R0 (primer número)
-@2
-M=M+D         // M[2] += D (acumulador += primer número)
+-   @R0
+-   D=M           // D = R0 (primer número)
+-   @2
+-   M=M+D         // M[2] += D (acumulador += primer número)
 
-@R1
-MD=M-1        // R1 -= 1
-@LOOP
-0;JMP         // Repetir el bucle
+-   @R1
+-   MD=M-1        // R1 -= 1
+-   @LOOP
+-   0;JMP         // Repetir el bucle
 
-(END)
-@END
-0;JMP         // Loop infinito para detener el programa
+-   (END)
+-   @END
+-   0;JMP         // Loop infinito para detener el programa
 
