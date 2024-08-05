@@ -143,6 +143,7 @@ D=M
 Error al momento de cargar invalid ASM value: M+D line 18 
 Se corrigio este error en la linea 18 y 26
 Se trato de modificar la linea 15 para que sean sumados los valores y no deja correr el ejercicio ya que tienen un error 
+No alcance a terminar el codigo en nand2tetris ni hacer la prueba en C# 
 
 ### EJERCICIO 3
 Multiplicación
@@ -176,4 +177,35 @@ Multiplicación
 -   (END)
 -   @END
 -   0;JMP        
+```
+
+### CORRECCIÓN EJERCICIO 1
+
+### Suma de los primeros N números naturales
+
+```asm
+@0
+D=M         
+@R1
+M=D         
+@0
+M=0          
+(LOOP)
+@R1
+D=M       
+@END
+D;JEQ       
+@R1
+D=M         
+@SUM
+0;JMP        
+@0
+M=D+M        
+@R1
+M=M-1        
+@LOOP
+0;JMP        
+(END)
+@END
+0;JMP      
 ```

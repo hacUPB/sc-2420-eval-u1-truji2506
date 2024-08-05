@@ -1,24 +1,29 @@
+// Inicializamos las direcciones de memoria
 @0
-D=M
-@sum
-M=0
-@i
+D=M          // D = N (valor almacenado en RAM[0])
+@R1
+M=D          // Guardamos N en R1
 @0
-D=M
-@i
-D=D-M
+M=0          // Reiniciamos RAM[0] para usarlo como acumulador de la suma
+
+(LOOP)
+@R1
+D=M          // D = valor de R1 (N)
 @END
-@i
-D=M
-@sum
-M=D+M
-@i
-M=M+1
-(loop)
-@loop  
+D;JEQ        // Si N es 0, terminamos el bucle
+@R1
+D=M          // D = valor de R1 (N)
+@SUM
+0;JMP        // Salta a SUM para hacer la suma
+
+(SUM)
+@0
+M=D+M        // RAM[0] = RAM[0] + N
+@R1
+M=M-1        // N = N - 1
+@LOOP
+0;JMP        // Repetimos el bucle
+
 (END)
-@sum
-D=M
-@5
-M=D
-0;JMP
+@END
+0;JMP        // Bucle infinito para finalizar el programa
