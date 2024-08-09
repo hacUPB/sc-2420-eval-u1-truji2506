@@ -209,3 +209,6 @@ M=M-1
 @END
 0;JMP      
 ```
+ACTIVIDAD 3 
+Ejercicicio 1 cruz 
+Se realizo codigo teniendo en cuenta lo explicado en la clase pasada y al momento de correrlo en Nand2tetris me sale un error "Error loading memory: ASM Emitting unfilled A instruction"
