@@ -209,3 +209,92 @@ M=M-1
 @END
 0;JMP      
 ```
+### ACTIVIDAD 3
+
+### EJERCICIO 1 
+
+### Objetivo
+Se empezo a realizar el experimento de poner lineas dos en el extremo y una en el medio
+
+### Procedimiento
+se intento subir el codigo para correrlo y me saltaba un error, el profesor me ayudo y me dijo que habia que tener una corrección por que tenia dos variables con el mismo nombre (lOOP)
+se realizar la corrección y se proceder a correr el codigo, en el intento se evidenciaba en la pantalla dos lineas a la mitad se corrigio las coordenadas y la linea de la izquiera y la del medio se realizaban correctamente pero las coodenadas de la derecha no me funciono por mas que intente realizae pruebas
+
+### Conclusionees
+Podemos concluir que para la realización de lineas en la pantalla es muy necesario tener en cuenta el tamaño de la misma en pixeles para realizar de forma concreta las lineas 
+
+```asm
+    @16384              //16384
+    D=A 
+    @PUNTERO
+    M=D     //puntero = 16384
+
+    @256
+    D=A 
+    @CONT
+    M=D     //cont = 256
+
+
+    (LOOP)
+    @PUNTERO
+    A=M 
+    M=-1
+    @32
+    D=A 
+    @PUNTERO
+    M=D+M 
+    @CONT
+    MD=M-1
+    @LOOP
+    D;JGT
+
+    @16400              //16400
+    D=A 
+    @PUNTERO
+    M=D     //puntero = 16400
+
+    @256
+    D=A 
+    @CONT
+    M=D     //cont = 256
+
+    (LOOP2)
+    @PUNTERO
+    A=M 
+    M=-1
+    @32
+    D=A 
+    @PUNTERO
+    M=D+M 
+    @CONT
+    MD=M-1
+    @LOOP2
+    D;JGT
+
+    @16700            //16700
+    D=A 
+    @PUNTERO
+    M=D     //puntero = 16700
+
+    @256
+    D=A 
+    @CONT
+    M=D     //cont = 256
+
+    (LOOP3)
+    @PUNTERO
+    A=M 
+    M=-1
+    @32
+    D=A 
+    @PUNTERO
+    M=D+M 
+    @CONT
+    MD=M-1
+    @LOOP3
+    D;JGT
+
+(END)
+    @END
+    0;JMP
+```
