@@ -298,3 +298,285 @@ Podemos concluir que para la realización de lineas en la pantalla es muy necesa
     @END
     0;JMP
 ```
+### Ejercicio 2
+
+### Objetivo
+realizar un codigo de barras con teclado
+
+### Procedimiento
+Se realizo el codigo para que realizara en la pantalla una linea negra de 16 bits y fuera consecutivas 
+
+### Conclusionees
+Podemos concluir que para la realización de lineas en la pantalla es muy necesario tener en cuenta el tamaño de la misma en pixeles para realizar de forma concreta las lineas 
+
+```asm
+(TECLADO)
+            @24576
+            D=M 
+            @113 //NUMERO DE TECLA
+            D=D-A 
+            @DIBUJAR
+            D;JEQ
+            @TECLADO
+            0;JMP
+
+(DIBUJAR)
+            @16384
+            D=A 
+            @PUNTERO
+            M=D     //puntero = 16384
+
+            @256
+            D=A 
+            @CONT
+            M=D     //cont = 256
+
+        (LOOP)
+            @PUNTERO
+            A=M 
+            M=-1
+            @32
+            D=A 
+            @PUNTERO
+            M=D+M 
+            @CONT
+            MD=M-1
+            @LOOP
+            D;JGT
+(TECLADO2)
+            @24576
+            D=M 
+            @119 //NUMERO DE TECLA
+            D=D-A 
+            @DIBUJAR2
+            D;JEQ
+            @TECLADO2
+            0;JMP
+
+(DIBUJAR2)
+            @16450
+            D=A 
+            @PUNTERO
+            M=D     //puntero = 16384
+
+            @256
+            D=A 
+            @CONT
+            M=D     //cont = 256
+(LOOP2)
+            @PUNTERO
+            A=M 
+            M=-1
+            @32
+            D=A 
+            @PUNTERO
+            M=D+M 
+            @CONT
+            MD=M-1
+            @LOOP2
+            D;JGT
+(TECLADO3)
+            @24576
+            D=M 
+            @101 //NUMERO DE TECLA
+            D=D-A 
+            @DIBUJAR3
+            D;JEQ
+            @TECLADO3
+            0;JMP
+
+(DIBUJAR3)
+            @16516
+            D=A 
+            @PUNTERO
+            M=D     //puntero = 16384
+
+            @256
+            D=A 
+            @CONT
+            M=D     //cont = 256
+(LOOP3)
+            @PUNTERO
+            A=M 
+            M=-1
+            @32
+            D=A 
+            @PUNTERO
+            M=D+M 
+            @CONT
+            MD=M-1
+            @LOOP3
+            D;JGT
+(TECLADO4)
+            @24576
+            D=M 
+            @114 //NUMERO DE TECLA
+            D=D-A 
+            @DIBUJAR4
+            D;JEQ
+            @TECLADO4
+            0;JMP
+
+(DIBUJAR4)
+            @16582
+            D=A 
+            @PUNTERO
+            M=D     //puntero = 16384
+
+            @256
+            D=A 
+            @CONT
+            M=D     //cont = 256
+(LOOP4)
+            @PUNTERO
+            A=M 
+            M=-1
+            @32
+            D=A 
+            @PUNTERO
+            M=D+M 
+            @CONT
+            MD=M-1
+            @LOOP4
+            D;JGT
+
+(TECLADO5)
+            @24576
+            D=M 
+            @116 //NUMERO DE TECLA
+            D=D-A 
+            @DIBUJAR5
+            D;JEQ
+            @TECLADO5
+            0;JMP
+
+(DIBUJAR5)
+            @16648
+            D=A 
+            @PUNTERO
+            M=D     //puntero = 16384
+
+            @256
+            D=A 
+            @CONT
+            M=D     //cont = 256
+(LOOP5)
+            @PUNTERO
+            A=M 
+            M=-1
+            @32
+            D=A 
+            @PUNTERO
+            M=D+M 
+            @CONT
+            MD=M-1
+            @LOOP5
+            D;JGT
+
+(TECLADO6)
+            @24576
+            D=M 
+            @121 //NUMERO DE TECLA
+            D=D-A 
+            @DIBUJAR6
+            D;JEQ
+            @TECLADO6
+            0;JMP
+
+(DIBUJAR6)
+            @16714
+            D=A 
+            @PUNTERO
+            M=D     //puntero = 16384
+
+            @256
+            D=A 
+            @CONT
+            M=D     //cont = 256
+(LOOP6)
+            @PUNTERO
+            A=M 
+            M=-1
+            @32
+            D=A 
+            @PUNTERO
+            M=D+M 
+            @CONT
+            MD=M-1
+            @LOOP6
+            D;JGT
+
+(TECLADO7)
+            @24576
+            D=M 
+            @117    //NUMERO DE TECLA
+            D=D-A 
+            @DIBUJAR7
+            D;JEQ
+            @TECLADO7
+            0;JMP
+
+(DIBUJAR7)
+            @16780
+            D=A 
+            @PUNTERO
+            M=D     //puntero = 16384
+
+            @256
+            D=A 
+            @CONT
+            M=D     //cont = 256
+(LOOP7)
+            @PUNTERO
+            A=M 
+            M=-1
+            @32
+            D=A 
+            @PUNTERO
+            M=D+M 
+            @CONT
+            MD=M-1
+            @LOOP7
+            D;JGT
+
+
+(TECLADO8)
+            @24576
+            D=M 
+            @105    //NUMERO DE TECLA
+            D=D-A 
+            @DIBUJAR8
+            D;JEQ
+            @TECLADO8
+            0;JMP
+
+(DIBUJAR8)
+            @16846
+            D=A 
+            @PUNTERO
+            M=D     //puntero = 16384
+
+            @256
+            D=A 
+            @CONT
+            M=D     //cont = 256
+(LOOP8)
+            @PUNTERO
+            A=M 
+            M=-1
+            @32
+            D=A 
+            @PUNTERO
+            M=D+M 
+            @CONT
+            MD=M-1
+            @LOOP8
+            D;JGT
+
+
+
+
+        (END)
+            @END
+            0;JMP
+´´´
