@@ -57,7 +57,7 @@ Tipos de arquitecturas de computadoras:
 ![Mapa Conceptual](Mapaconceptual2.png)
 
 
-### Actividad 2 
+### ACTIVIDAD 2 
 
 ### EJERCICIO 1 
 
@@ -224,9 +224,9 @@ Se empezo a realizar el experimento de poner lineas dos en el extremo y una en e
 
 ### Procedimiento
 se intento subir el codigo para correrlo y me saltaba un error, el profesor me ayudo y me dijo que habia que tener una corrección por que tenia dos variables con el mismo nombre (lOOP)
-se realizar la corrección y se proceder a correr el codigo, en el intento se evidenciaba en la pantalla dos lineas a la mitad se corrigio las coordenadas y la linea de la izquiera y la del medio se realizaban correctamente pero las coodenadas de la derecha no me funciono por mas que intente realizae pruebas
+se realizar la corrección y se proceder a correr el codigo, en el intento se evidenciaba en la pantalla dos lineas a la mitad se corrigio las coordenadas y la linea de la izquiera y la del medio se realizaban correctamente pero las coodenadas de la derecha no me funciono por mas que intente realizar pruebas
 
-### Conclusionees
+### Conclusiones
 Podemos concluir que para la realización de lineas en la pantalla es muy necesario tener en cuenta el tamaño de la misma en pixeles para realizar de forma concreta las lineas 
 
 ```asm
