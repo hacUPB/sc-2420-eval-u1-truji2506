@@ -145,8 +145,12 @@ Se corrigio este error en la linea 18 y 26
 Se trato de modificar la linea 15 para que sean sumados los valores y no deja correr el ejercicio ya que tienen un error 
 No alcance a terminar el codigo en nand2tetris ni hacer la prueba en C# 
 
+El código parece intentar comparar los valores en las direcciones de memoria 2 y 3, y luego modificar la dirección 2 basado en la comparación. Sin embargo, algunos pasos están incompletos o mal definidos, lo que hace difícil determinar el propósito exacto. Hay instrucciones redundantes o incorrectas, como M=0, y la falta de un punto de salida claro del bucle.
+
 ### EJERCICIO 3
 Multiplicación
+
+Este código efectúa una suma repetida del valor almacenado en R0 un número de veces igual al valor inicial almacenado en R1. El resultado de la suma acumulada se almacena en la dirección de memoria 2. Una vez que R1 llega a 0, el programa salta a END y se queda en un bucle infinito.
 
 ```asm
 -   @0
@@ -182,6 +186,8 @@ Multiplicación
 ### CORRECCIÓN EJERCICIO 1
 
 ### Suma de los primeros N números naturales
+
+Esta corrección del ejercicio 1 se encuentra corriendo de forma correcta 
 
 ```asm
 @0
